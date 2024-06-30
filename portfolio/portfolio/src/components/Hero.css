@@ -1,0 +1,29 @@
+.hero-main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.name{
+    font-size: 1.3rem;
+}
+
+.mail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mail img{
+    width: 35px;
+    height: 35px;
+    padding: 12px;
+}
+
+.mail a{
+    font-size: 1rem;
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}

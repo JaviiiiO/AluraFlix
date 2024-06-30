@@ -1,0 +1,64 @@
+.principal-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 60vh;
+    animation: fadeInUp 1s ease-in forwards;
+  }
+  
+  .left {
+    font-size: 1.5rem;
+    width: 50%; /* Ajusta según el tamaño deseado */
+  }
+  
+  .left h1 {
+    font-size: 4rem;
+    width: 70%;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: rgb(0, 33, 133);
+    font-weight: bold;
+  }
+  
+  .right {
+    position: relative;
+    width: 300px; /* Ajusta según el tamaño deseado */
+    height: 400px; /* Ajusta según el tamaño deseado */
+  }
+  
+  .photo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta para que la imagen cubra todo el contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .photo1 {
+    transform: rotate(-15deg) translateX(-80px) translateY(20px);
+    z-index: 1; /* Mantener esta foto detrás */
+  }
+  
+  .photo2 {
+    transform: rotate(15deg) translateX(50px) translateY(5px);
+    z-index: 2; /* Mantener esta foto al frente */
+  }
+ 
+  .photo1:hover {
+    z-index: 3;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
